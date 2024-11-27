@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+}
+
+header{
+    padding: 20px 0px;
+}
+
+#logocont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#contenuto-logo{
+   text-align: center;
+}
+
+
+#titolo{
+    border: 5px solid black;
+    padding: 10px 200px;
+    margin: 20px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+#contenuto-logo img{
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+menu{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    padding-bottom: 10px;
+    border: 1px solid white;
+    background-color: rgb(2, 2, 60);
+}
+
+menu a{
+    color: white;
+    background-color: rgb(6, 6, 159);
+    border: 1px solid black;
+    padding-bottom: 20px;
+    padding: 2%;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+}
+menu a:hover{
+    color: blue;
+    background-color: white;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    margin: 0px 10px;
+    border: 10px solid black;
+    text-align: center;
+    padding: 20px;
+    background-color: skyblue;
+    border-radius: 20px;
+    background-color: aquamarine;
+    
+}
+
+article img{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+article h2{
+    margin-bottom: 20px;
+}
+
+article img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+article p{
+    margin-top: 20px;
+}
+
+section ul{
+   display: flex;
+   justify-content: center;
+   padding: 10px 0px;
+}
+
+section li{
+    font-size: 20px;
+    list-style: none;
+    margin-left: 10px;
+}
+
+
+
+footer{
+    padding: 10px 0px;
+    background-color: rgb(2, 2, 60);
+    text-align: center;
+}
+footer menu{
+    border: 0px;
+}
+
+
+footer p{
+    color: white;
+    padding: 5px;
+    
+}
+
+/* regole per il mobile, schermo max 430 px*/
+@media screen and (max-width: 430px){
+
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #titolo{
+        padding: 10px 100px;
+    }
+
+    article{
+        margin-bottom: 20px;
+    }
+
+    article h2{
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    article p{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 431px) {
+    
+    main{
+        flex-direction: column;
+    }
+
+    article{
+        margin: 10px;
+    }
+
+    article img{
+        width: 70%;
+    }
+
+    article p{
+        font-size: 30px;
+    }
+    
+    article h2{
+        font-size: 35px;
+        margin-top: 10px;
+        text-transform: capitalize;
+    }
+
+    #articolo1{
+        display: none;
+    }
+}
+
